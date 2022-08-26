@@ -18,7 +18,8 @@ for i, node in enumerate(nodes):
     print(node)
     command = 'ssh '+node+" 'conda activate wmlce-ea;"+config+";python multi_worker_with_keras_numpyArrays.py'"
     print(command)
-    
+    print("Hello")
+
     def thread_function(command):
         os.system(command)
 
